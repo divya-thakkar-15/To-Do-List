@@ -1,0 +1,26 @@
+.container {
+    height: 700px;
+    width: 600px;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: column; */
+
+}
+
+form {
+    height: 600px;
+    width: 550px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 20px;
+    line-height: 50px;
+    text-transform: capitalize;
+
+}
+
+#btn {
+    width: 400px;
+    margin-left: 50px;
+}

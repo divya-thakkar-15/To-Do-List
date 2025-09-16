@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Key Code Detector</h1>
+    <div>
+        Key: <p id="key"></p>
+        KeyCode: <p id="keycode"></p>
+        Code: <p id="code"></p>
+    </div>
+
+    <script>
+        let key = document.getElementById("key")
+        let keycode = document.getElementById("keycode")
+        let code = document.getElementById("code")
+
+        document.addEventListener("keydown", function(event){
+            // console.log(event.key)
+            key.innerHTML = event.key;
+            keycode.innerHTML = event.keyCode;
+            code.innerHTML = event.code;
+            
+        })
+    </script>
+</body>
+</html>

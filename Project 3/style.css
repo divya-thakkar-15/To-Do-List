@@ -1,0 +1,49 @@
+.body {
+    background-color: rgb(69, 93, 114);
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(16, 104, 181);
+    margin: 10px;
+    position: absolute;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.box {
+    min-height: 200px;
+    width: 200px;
+    background-color: beige;
+}
+
+.square {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(181, 16, 132);
+    position: absolute;
+}
+
+.triangle {
+    height: 0px;
+    width: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid red;
+    position: absolute;
+}
+.rectangle{
+    height: 60px;
+    width: 110px;
+    position: absolute;
+    background-color: rgb(227, 146, 146);
+}

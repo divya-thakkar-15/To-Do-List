@@ -1,0 +1,44 @@
+#container {
+    height: 300px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#box {
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(10, 10, 97);
+    border: 5px dashed #f29494;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: aliceblue;
+}
+#items{
+     height: 50px;
+    width: 180px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#word{
+    font-size:100px;
+}
+.input{
+    margin-top: 20px;
+}
+#input{
+    height: 40px;
+    width: 250px;
+}
+#check{
+     height: 40px;
+    width: 200px;
+    background-color: rgb(10, 10, 97);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}

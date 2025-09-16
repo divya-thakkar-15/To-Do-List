@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="list">
+        <li><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZWlPjghR3F6rno2RtA56T9mRyUL_BWILiAmpxP0-npm6nmw-Gsm9AFDYLAl8paow4CEKMeRHaQn39tB4VniZan8svg2JIpXXOO6L84F4" alt="lion" id="lion" width="200px"></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4NkmusstBoUBuvwN1tvEvaT6QaKQ7e_mHko2CsS9TqR1CpvUiRUZmFVBg67AOCQLLrNH6_DPxXXxl5vQEqodLp2xZmPVoRAIh_CZ8IpU" alt="tiger" id="tiger" width="200px"></li>
+        <li><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBpiCTj5QZc7plt8t_MPl9ATgmZNNlw7-uWagsZneW_fU-4lQAmDkXA-AMpdHFXBEhrMrGg-_2-0OJt2BOug6FAgQ6l8zXMLFTBDfKsfk" alt="rabbit" id="rabbit" width="200px"></li>
+        <li><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFUs_3BaqPDUCvtipXJwbEZ4dMQogTl6A184_4Kw_Wp3PlH8NWTAbK7t1H3vlz_2AdviYZKz9QNTShZN6XgEgx8E0Py5wbuXg-9RLKRxY" alt="cow" id="cow" width="200px"></li>
+        <li><a href="https:www.google.com" id="google">Google</a></li>
+    </ol>
+
+    <script>
+        let lion = document.getElementById("lion")
+        let list = document.getElementById("list")
+        let google = document.getElementById("google")
+
+        // parent element event
+        list.addEventListener("click", function(e){
+            console.log("list clicked");
+            console.log(e.target.tagName);
+
+            if(e.target.tagName === "IMG"){
+                let item = e.target.parentElement
+                item.remove();
+                // item.parentElement.removeChild(item);
+            }
+        }, false)
+
+        // child element event
+        lion.addEventListener("click", function(e){
+            console.log("lion clicked");
+            // e.stopPropagation();
+        }, false)
+
+        google.addEventListener("click", function(e){
+            console.log("google clicked");
+            // e.stopPropagation();
+            e.preventDefault();
+            setTimeout(() => {
+                window.location.href=google.href;
+            }, 7000);
+        });
+
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="word.css">
+</head>
+<body>
+    <div id="container">
+          <select name="catagory" id="items" onchange="disWords()">
+            
+                <option value="Colors">Colors</option>
+                 <option value="Fruits">Fruits</option>
+                  <option value="Animal">Animal</option>
+                   <option value="Veges">Veges</option>
+            </select>
+        <div id="box">  
+            <p id="word">select catagory</p>
+        </div>
+       <div class="input">
+
+        <input type="text" name="input" id="input" placeholder="Type here">
+        <button id="check"> check</button>
+        </div>
+    </div>
+    <script src="word.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+li{
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+   color: rgb(255, 208, 0);
+   padding: 20px;
+   }
+
+   li:hover{
+    font-size: small;
+    cursor: pointer;
+    border: 1px solid rgb(245, 232, 176);
+    border-radius: 15px;
+   }
