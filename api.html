@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data</title>
+</head>
+<body>
+    <h1>API Data</h1>
+    <button id="btn">Get Data</button>
+    <p id="data"></p>
+    <img src="" alt="" id="img" width="300px">
+
+    <script>
+        async function callAPI() {
+            let res = await fetch("https://api.github.com/users/veershah-sh");
+
+            try {
+                if(!res.ok){
+                    console.log(`Error: ${res.status}`);
+                }
+
+                let user_data = res.json()
+                console.log(user_data);
+
+                user_data.then((d) => {
+                    console.log(d.login);
+                    document.getElementById("data").innerHTML = d.login;
+                    document.getElementById("img").src = d.avatar_url;
+                })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        document.getElementById("btn").addEventListener("click", function(){
+            callAPI()
+        })
+    </script>
+</body>
+</html>
